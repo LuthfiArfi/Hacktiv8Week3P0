@@ -25,6 +25,7 @@ function angkaPalindrome(num) {
         }
       }
   }
+  numString = Number(numString);
   return numString;
 }
 
