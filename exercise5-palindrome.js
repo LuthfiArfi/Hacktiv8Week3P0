@@ -3,20 +3,16 @@ function palindrome(kata) {
   var hasil2=false;
   var hasil=false;
   if (kata.length === 1) {
-    hasil = true;
+    return true;
   }
   else{
     for (var i = 0; i <= kata.length/2; i++){
-     if (kata[i] === kata [(kata.length-1)-(i)]){
-       hasil1 = true;
-     }else{
-       hasil1 = false;
+     if (kata[i] !== kata [(kata.length-1)-(i)]){
+       return false;
      }
-    hasil = hasil1 && hasil2;
-    hasil2 = hasil1
     }
+    return true
   }
-   return hasil;
   // you can only write your code here!
 }
 
